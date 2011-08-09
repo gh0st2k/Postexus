@@ -22,15 +22,14 @@
 * Author: mpkossen
 *************************************************************************/
 
-class Database
-{
-	public function construct($config = null)
-	{
+class Database {
+	public function construct($config = null) {
 		if (is_null($config)) {
-			// Use default config from config file
+			// TODO: Better path determination
+			require_once(__DIR__ . '/../config.php');
 		}
 
-		return new mysqli('localhost', 'root', '', 3306);
+		return new mysqli($config['database']['hostname'], $config['database']['username'], $config['database']['password'], $config['database']['database'], $config['database']['post']);
 	}
 }
 

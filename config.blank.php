@@ -1,9 +1,13 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: mpkossen
- * Date: 8/9/11
- * Time: 11:34 AM
- * To change this template use File | Settings | File Templates.
- */
 
+$config = array(
+	'database'
+);
+
+$config['database']['hostname']		= 'localhost';
+$config['database']['username']		= '';
+$config['database']['password']		= '';
+$config['database']['database']		= 'postexus';
+$config['database']['post']			= 3306;
+
+?>

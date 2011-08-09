@@ -23,5 +23,8 @@
 *************************************************************************/
 
 // This is the core of Postexus!
+require_once('core/Postexus.class.php');
+
+$Database = Postexus::getDatabase();
 
 ?>
