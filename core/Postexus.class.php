@@ -24,14 +24,16 @@
 
 require_once(__DIR__ . '/Database.class.php');
 
-class Postexus {
+class Postexus
+{
 	static $Database = null;
 
 	/**
 	 * @static Function to get the current Database object
 	 * @return Database object
 	 */
-	public static function getDatabase() {
+	public static function getDatabase()
+	{
 		if (is_null($Database)) {
 			self::$Database = new Database();
 		}

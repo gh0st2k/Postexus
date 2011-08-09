@@ -22,8 +22,10 @@
 * Author: mpkossen
 *************************************************************************/
 
-class Database {
-	public function construct($config = null) {
+class Database
+{
+	public function construct($config = null)
+	{
 		if (is_null($config)) {
 			// TODO: Better path determination
 			require_once(__DIR__ . '/../config.php');
